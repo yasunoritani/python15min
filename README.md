@@ -1,0 +1,2 @@
+# python15min
+毎日15分で学ぶPythonのウェブサイトをClaudeに全振りで作ってもらった
