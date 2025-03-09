@@ -1,0 +1,142 @@
+/* 基本スタイルのリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ヘッダースタイル */
+header {
+    background-color: #3776ab; /* Python青 */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ナビゲーションスタイル */
+nav {
+    background-color: #2d618c;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* メインコンテンツスタイル */
+main {
+    padding: 3rem 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #3776ab;
+}
+
+.intro p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3776ab;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2d618c;
+}
+
+/* 特徴カードスタイル */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    color: #3776ab;
+    margin-bottom: 1rem;
+}
+
+/* フッタースタイル */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+}

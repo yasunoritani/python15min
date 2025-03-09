@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レッスン1: Pythonの基本と環境構築 - 15分Python</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lesson-detail.css">
+    <!-- コードハイライト用のライブラリ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>15分Python</h1>
+            <p>毎日15分でPythonスキルを向上させよう</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="lessons.html">レッスン一覧</a></li>
+                <li><a href="about.html">このサイトについて</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container lesson-container">
+            <aside class="lesson-sidebar">
+                <div class="lesson-progress">
+                    <h3>レッスンの進捗</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 20%"></div>
+                    </div>
+                    <p>5レッスン中 1レッスン完了</p>
+                </div>
+                <div class="lesson-navigation">
+                    <h3>レッスンナビゲーション</h3>
+                    <ul>
+                        <li class="active"><a href="lesson1.html">1. Pythonの基本と環境構築</a></li>
+                        <li><a href="lesson2.html">2. 変数と基本データ型</a></li>
+                        <li><a href="lesson3.html">3. 条件文とif文</a></li>
+                        <li><a href="lesson4.html">4. 繰り返し処理とループ</a></li>
+                        <li><a href="lesson5.html">5. リストとその操作</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <article class="lesson-content">
+                <div class="lesson-header">
+                    <span class="lesson-number">レッスン 1</span>
+                    <h2>Pythonの基本と環境構築</h2>
+                    <p class="lesson-duration">学習時間: 約15分</p>
+                </div>
+
+                <section class="lesson-section">
+                    <h3>1. Pythonとは？</h3>
+                    <p>Pythonは、シンプルで読みやすい構文を持つ高水準プログラミング言語です。データ分析、ウェブ開発、人工知能など、幅広い分野で使用されています。</p>
+                    <div class="info-box">
+                        <h4>Pythonの特徴</h4>
+                        <ul>
+                            <li>読みやすく、書きやすい構文</li>
+                            <li>幅広いライブラリとフレームワーク</li>
+                            <li>多様なプラットフォームで動作</li>
+                            <li>プロトタイピングに適した開発速度</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="lesson-section">
+                    <h3>2. 環境構築</h3>
+                    <p>Pythonを使用するには、まずお使いのコンピュータに環境を整える必要があります。</p>
+                    <h4>Pythonのインストール</h4>
+                    <ol>
+                        <li><a href="https://www.python.org/downloads/" target="_blank">Python公式サイト</a>からインストーラーをダウンロード</li>
+                        <li>インストーラーを実行（「Add Python to PATH」にチェックを入れることを忘れないでください）</li>
+                        <li>インストールが完了したら、コマンドプロンプトまたはターミナルで動作確認</li>
+                    </ol>
+                    <div class="code-example">
+                        <h4>インストール確認</h4>
+                        <pre><code class="language-bash">python --version</code></pre>
+                        <p>上記コマンドを実行すると、インストールされたPythonのバージョンが表示されます。</p>
+                    </div>
+                </section>
+
+                <section class="lesson-section">
+                    <h3>3. 最初のPythonプログラム</h3>
+                    <p>Pythonの基本を理解するため、簡単な「Hello, World!」プログラムを作成してみましょう。</p>
+                    <div class="code-example">
+                        <h4>Hello, World!</h4>
+                        <pre><code class="language-python">print("Hello, World!")</code></pre>
+                        <p>このコードをファイル（例: hello.py）に保存し、ターミナルで実行します。</p>
+                        <pre><code class="language-bash">python hello.py</code></pre>
+                        <p>出力: <code>Hello, World!</code></p>
+                    </div>
+                </section>
+
+                <section class="lesson-section">
+                    <h3>4. 統合開発環境 (IDE)</h3>
+                    <p>プログラミングをより効率的に行うために、IDEの使用をお勧めします。人気のある選択肢には以下があります。</p>
+                    <div class="tool-cards">
+                        <div class="tool-card">
+                            <h4>Visual Studio Code</h4>
+                            <p>Microsoft社が開発した無料のコードエディタで、Python拡張機能を追加することで強力なIDEになります。</p>
+                            <a href="https://code.visualstudio.com/" target="_blank" class="btn-small">ダウンロード</a>
+                        </div>
+                        <div class="tool-card">
+                            <h4>PyCharm</h4>
+                            <p>JetBrains社によるPython専用の統合開発環境。コミュニティ版は無料で使用できます。</p>
+                            <a href="https://www.jetbrains.com/pycharm/" target="_blank" class="btn-small">ダウンロード</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="lesson-practice">
+                    <h3>実践課題</h3>
+                    <p>今日のレッスンで学んだ内容を確認するための課題です。15分以内で完了できるはずです。</p>
+                    <ol>
+                        <li>Pythonをインストールし、バージョン確認を行う</li>
+                        <li>好みのIDEをインストールする</li>
+                        <li>「Hello, World!」プログラムを作成して実行する</li>
+                        <li>自分の名前を出力するプログラムを作成する</li>
+                    </ol>
+                </section>
+
+                <div class="lesson-navigation-buttons">
+                    <a href="lessons.html" class="btn-nav">レッスン一覧へ戻る</a>
+                    <a href="lesson2.html" class="btn-nav btn-next">次のレッスンへ</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 15分Python. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

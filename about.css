@@ -1,0 +1,144 @@
+/* このサイトについてページのスタイル */
+.about-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    color: #3776ab;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-section {
+    margin-bottom: 3rem;
+}
+
+.about-section h3 {
+    color: #3776ab;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+/* 特徴一覧のスタイル */
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.feature-item {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.feature-item h4 {
+    color: #3776ab;
+    margin-bottom: 0.5rem;
+}
+
+/* 推奨リストのスタイル */
+.recommendation-list {
+    padding-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.recommendation-list li {
+    margin-bottom: 1.5rem;
+}
+
+.recommendation-list h4 {
+    color: #3776ab;
+    margin-bottom: 0.5rem;
+}
+
+/* 開発者情報のスタイル */
+.developer-info {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.developer-image {
+    flex: 0 0 150px;
+}
+
+.profile-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #adb5bd;
+    font-size: 1.5rem;
+}
+
+.developer-bio {
+    flex: 1;
+}
+
+.developer-bio p {
+    margin-bottom: 1rem;
+}
+
+/* お問い合わせフォームのスタイル */
+.contact-section {
+    margin-bottom: 0;
+}
+
+.contact-form {
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3776ab;
+    box-shadow: 0 0 0 3px rgba(55, 118, 171, 0.25);
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .developer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-placeholder {
+        margin-bottom: 1.5rem;
+    }
+    
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+}

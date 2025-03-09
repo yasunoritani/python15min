@@ -1,0 +1,180 @@
+/* レッスン詳細ページのスタイル */
+.lesson-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+}
+
+/* サイドバースタイル */
+.lesson-sidebar {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+}
+
+.lesson-progress h3, .lesson-navigation h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #3776ab;
+}
+
+.progress-bar {
+    height: 8px;
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.progress {
+    height: 100%;
+    background-color: #3776ab;
+    border-radius: 4px;
+}
+
+.lesson-navigation {
+    margin-top: 2rem;
+}
+
+.lesson-navigation ul {
+    list-style: none;
+}
+
+.lesson-navigation ul li {
+    margin-bottom: 0.5rem;
+}
+
+.lesson-navigation ul li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.lesson-navigation ul li a:hover, .lesson-navigation ul li.active a {
+    background-color: #f1f3f5;
+    color: #3776ab;
+}
+
+/* レッスンコンテンツスタイル */
+.lesson-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 1rem;
+}
+
+.lesson-duration {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.lesson-section {
+    margin-bottom: 2.5rem;
+}
+
+.lesson-section h3 {
+    color: #3776ab;
+    margin-bottom: 1rem;
+}
+
+.lesson-section h4 {
+    margin: 1.5rem 0 0.5rem;
+}
+
+.info-box {
+    background-color: #f1f8ff;
+    border-left: 4px solid #3776ab;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.code-example {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.code-example pre {
+    margin: 0.5rem 0;
+}
+
+.tool-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.tool-card {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.lesson-practice {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.lesson-practice h3 {
+    color: #3776ab;
+    margin-bottom: 1rem;
+}
+
+.lesson-navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #e9ecef;
+}
+
+.btn-nav {
+    display: inline-block;
+    background-color: #f1f3f5;
+    color: #555;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-nav:hover {
+    background-color: #e9ecef;
+}
+
+.btn-next {
+    background-color: #3776ab;
+    color: white;
+}
+
+.btn-next:hover {
+    background-color: #2d618c;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .lesson-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .lesson-sidebar {
+        position: static;
+        margin-bottom: 2rem;
+    }
+}

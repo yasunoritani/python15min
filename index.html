@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15分Python - 毎日のPython学習</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>15分Python</h1>
+            <p>毎日15分でPythonスキルを向上させよう</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" class="active">ホーム</a></li>
+                <li><a href="lessons.html">レッスン一覧</a></li>
+                <li><a href="about.html">このサイトについて</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h2>Python学習をシンプルに</h2>
+                <p>忙しい日常の中でも続けられる、15分のPython学習プログラムへようこそ。</p>
+                <p>このサイトでは、Pythonの基礎から応用まで、毎日15分で学べるよう設計されたレッスンを提供しています。</p>
+                <a href="lessons.html" class="btn">今日のレッスンを始める</a>
+            </section>
+
+            <section class="timer-section">
+                <div class="timer-container">
+                    <h3>学習タイマー</h3>
+                    <p>毎日15分の学習を管理するためのタイマーです。</p>
+                    <div class="timer-display">
+                        <span id="timer">15:00</span>
+                    </div>
+                    <div class="timer-controls">
+                        <button id="start-timer" class="btn-timer">開始</button>
+                        <button id="reset-timer" class="btn-timer">リセット</button>
+                    </div>
+                    <div id="completion-message" class="completion-message">
+                        <p>お疲れ様でした！今日の学習が完了しました。明日も続けましょう！</p>
+                    </div>
+                    <div class="motivation">
+                        <p id="motivation-message">継続は力なり！毎日15分の積み重ねが大きな成果につながります。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="feature-card">
+                    <h3>短時間で効果的</h3>
+                    <p>各レッスンは15分以内で完了できるよう設計されています。短い時間でも着実にスキルアップ。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>実践的な内容</h3>
+                    <p>理論だけでなく、すぐに使える実践的なコードサンプルとプロジェクトを提供。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>段階的な学習</h3>
+                    <p>基礎から応用まで、順序だてて学べるカリキュラム構成で、無理なく成長できます。</p>
+                </div>
+            </section>
+            
+            <section class="streak-section">
+                <h3>学習の記録</h3>
+                <div class="streak-container">
+                    <div class="streak-info">
+                        <span id="streak-count">0</span>
+                        <p>日連続</p>
+                    </div>
+                    <div class="calendar" id="learning-calendar">
+                        <!-- JavaScriptで動的に生成されるカレンダー -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 15分Python. All rights reserved.</p>
+        </div>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>

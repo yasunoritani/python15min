@@ -1,0 +1,76 @@
+/* レッスン一覧ページのスタイル */
+.page-title {
+    text-align: center;
+    color: #3776ab;
+    margin-bottom: 1rem;
+}
+
+.page-intro {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lesson-categories h3 {
+    color: #3776ab;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.lesson-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.lesson-card:hover {
+    transform: translateY(-5px);
+}
+
+.lesson-number {
+    display: inline-block;
+    background-color: #3776ab;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.lesson-card h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.lesson-card p {
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.btn-small {
+    display: inline-block;
+    background-color: #3776ab;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn-small:hover {
+    background-color: #2d618c;
+}
